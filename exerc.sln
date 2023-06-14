@@ -1,0 +1,58 @@
+using System;
+using System.Globalization;
+
+namespace fixacao{
+    class Exercicios{
+         static void Main(String[] args){
+
+
+            Console.WriteLine("Entre com seu nome completo: ");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Quantos quartos tem na sua casa?");
+            int quartos = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entre com o valor de um produto: ");
+            double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            Console.WriteLine("Entre com seu ultimo nome, idade e altura (Na mesma linha):");
+            String[] vetor = Console.ReadLine().Split(" ");
+            
+            string lastName = vetor[0];
+            int idade = int.Parse(vetor[1]);
+            double altura = double.Parse(vetor[2], CultureInfo.InvariantCulture);
+
+            Console.WriteLine(nome);
+            Console.WriteLine(quartos);
+            Console.WriteLine(valor);
+            Console.WriteLine(lastName);
+            Console.WriteLine(idade);
+            Console.WriteLine(altura);
+
+
+           /* Aula 18
+            * 
+            * string produto1 = "Computador";
+            string produto2 = "Mesa de escritorio";
+
+            byte idade = 30;
+            int codigo = 5290;
+            char genero = 'M';
+
+            double preco1 = 2100.0;
+            double preco2 = 650.50;
+            double medida = 53.234567;
+
+            Console.WriteLine("Produtos:");
+            Console.WriteLine($"{produto1}, cujo o preço é $ {preco1:f2}");
+            Console.WriteLine($"{produto2}, cujo o preço é $ {preco2:f2}");
+            Console.WriteLine("");
+            Console.WriteLine($"Registro: {idade} anos de idade, codigo {codigo} e genero: {genero}");
+            Console.WriteLine("");
+            Console.WriteLine($"Medida com oito casas decimais: {medida:f8}");
+            Console.WriteLine($"Arredondado (tres casas decimais): {medida:f3}");
+            Console.WriteLine("Separador decimal invariant culture: " + medida.ToString("F3", CultureInfo.InvariantCulture));
+           */
+
+        }
+
+    }
+
+}
